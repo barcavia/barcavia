@@ -65,6 +65,15 @@
       transform: translateY(-2px);
     }
 
+    .hero-title {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
     .publication-block {
       background-color: white;
       border-radius: 8px;
@@ -107,7 +116,7 @@
           </div>
         </div>
         <div class="column">
-          <h1 class="title">
+          <h1 class="hero-title">
             <b>Hey, I'm Bar Cavia</b>
           </h1>
           <div class="content has-text-justified">
@@ -174,7 +183,7 @@
               <span class="author-block">Tal Reiss,</span>
               <span class="author-block">Yedid Hoshen</span>
             </div>
-            <p class="publication-description">Recent improvements in generative AI made synthesizing fake images easy; as they can be used to cause harm, it is crucial to develop accurate techniques to identify them. This paper introduces "Locally Aware Deepfake Detection Algorithm" (*LaDeDa*), that accepts a single 9x9 image patch and outputs its deepfake score. The image deepfake score is the pooled score of its patches. With merely patch-level information, LaDeDa significantly improves over the state-of-the-art, achieving around 99% mAP on current benchmarks.</p>
+            <p class="publication-description">Recent improvements in generative AI made synthesizing fake images easy; as they can be used to cause harm, it is crucial to develop accurate techniques to identify them. This paper introduces "Locally Aware Deepfake Detection Algorithm" (*LaDeDa*), that accepts a single 9x9 image patch and outputs its deepfake score. The image deepfake score is the pooled score of its patches. With merely patch-level information, LaDeDa significantly improves over the state-of-the-art, achieving around 99% mAP on current benchmarks. Owing to the patch-level structure of LaDeDa, we hypothesize that the generation artifacts can be detected by a simple model. We therefore distill LaDeDa into Tiny-LaDeDa, a highly efficient model consisting of only 4 convolutional layers. Remarkably, Tiny-LaDeDa has 375x fewer FLOPs and is 10,000x more parameter-efficient than LaDeDa, allowing it to run efficiently on edge devices with a minor decrease in accuracy. These almost-perfect scores raise the question: is the task of deepfake detection close to being solved? Perhaps surprisingly, our investigation reveals that current training protocols prevent methods from generalizing to real-world deepfakes extracted from social media. To address this issue, we introduce *WildRF*, a new deepfake detection dataset curated from several popular social networks. Our method achieves the top performance of 93.7% mAP on WildRF, however the large gap from perfect accuracy shows that reliable real-world deepfake detection is still unsolved.</p>
             <div class="publication-links buttons">
               <a class="external-link button is-small is-rounded" href="https://vision.huji.ac.il/ladeda/" target="_blank">
                 <span class="icon"><i class="fas fa-globe-europe"></i></span>
@@ -209,7 +218,7 @@
               <span class="author-block"><strong>Bar Cavia</strong>,</span>
               <span class="author-block">Yedid Hoshen</span>
             </div>
-            <p class="publication-description">Deepfake attacks, malicious manipulation of media containing people, are a serious concern for society. Conventional deepfake detection methods train supervised classifiers to distinguish real media from previously encountered deepfakes. Such techniques can only detect deepfakes similar to those previously seen, but not zero-day (previously unseen) attack types. As current deepfake generation techniques are changing at a breathtaking pace, new attack types are proposed frequently, making this a major issue.</p>
+            <p class="publication-description">Deepfake attacks, malicious manipulation of media containing people, are a serious concern for society. Conventional deepfake detection methods train supervised classifiers to distinguish real media from previously encountered deepfakes. Such techniques can only detect deepfakes similar to those previously seen, but not zero-day (previously unseen) attack types. As current deepfake generation techniques are changing at a breathtaking pace, new attack types are proposed frequently, making this a major issue. Our main observations are that: i) in many effective deepfake attacks, the fake media must be accompanied by false facts i.e. claims about the identity, speech, motion, or appearance of the person. For instance, when impersonating Obama, the attacker explicitly or implicitly claims that the fake media show Obama; ii) current generative techniques cannot perfectly synthesize the false facts claimed by the attacker. We therefore introduce the concept of “fact checking”, adapted from fake news detection, for detecting zero-day deepfake attacks. Fact checking verifies that the claimed facts (e.g. identity is Obama), agree with the observed media (e.g. is the face really Obama’s?), and thus can differentiate between real and fake media. Consequently, we introduce FACTOR, a practical recipe for deepfake fact checking and demonstrate its power in critical attack settings: face swapping and audio-visual synthesis. Although it is training-free, relies exclusively on off-the-shelf features, is very easy to implement, and does not see any deepfakes, it achieves better than state-of-the-art accuracy.</p>
             <div class="publication-links buttons">
               <a class="external-link button is-small is-rounded" href="https://arxiv.org/pdf/2311.01458" target="_blank">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
