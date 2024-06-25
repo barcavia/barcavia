@@ -1,242 +1,219 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="Real-Time Deepfake Detection in the Real-World"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="https://vision.huji.ac.il/ladeda/">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Bar Cavia</title>
+  <link rel="icon" href="static/images/favicon.ico">
 
+  <!-- Meta tags -->
+  <meta name="keywords" content="Bar Cavia, Bar, Cavia">
+  <meta property="og:site_name" content="Bar Cavia">
+  <meta property="og:title" content="Bar Cavia">
+  <meta name="description" content="Bar Cavia's Homepage">
+  <meta property="og:description" content="Bar Cavia's Homepage">
+  <meta property="og:image" itemprop="image" content="me.png">
+  <meta property="og:type" content="website" />
+<!--  <meta property="og:image:type" content="image/jpeg">-->
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Real-Time Deepfake Detection in the Real-World</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <style>
-    .video-container {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      margin: auto;
-      border: 10px solid #ddd;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
-
-<style>
-  .hero.is-custom-color {
-    background-color: #a3cadb33; /* Replace with your desired color */
-  }
-</style>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="./static/css/bulma.min.css" rel="stylesheet">
+  <link href="./static/css/index.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <meta name="google-site-verification" content="XzWjTNK8laV1FVIfAcXTgXJD_PMx_xqbTUxjvLCiaXw" />
 </head>
+
 <body>
 
-
-  <section class="hero is-small is-custom-color">
-    <div class="hero-body">
-      <div class="container is-max-desktop has-text-centered">
-        <h1 class="title is-1 publication-title">Real-Time Deepfake Detection in the Real-World</h1>
-        <div class="is-size-5 publication-authors">
-          <span class="author-block"><a href="https://www.linkedin.com/in/bar-cavia/" target="_blank">Bar Cavia</a>,</span>
-          <span class="author-block"><a href="https://pages.cs.huji.ac.il/eliahu-horwitz/" target="_blank">Eliahu Horwitz</a>,</span>
-          <span class="author-block"><a href="https://scholar.google.com/citations?user=sgMIT6EAAAAJ&hl=en" target="_blank">Tal Reiss</a>,</span>
-          <span class="author-block"><a href="https://cs.huji.ac.il/w~ydidh/" target="_blank">Yedid Hoshen</a></span>
-        </div>
-        <div class="is-size-5 publication-authors">
-          <span class="author-block">The Hebrew University of Jerusalem<br></span>
-        </div>
-        <div class="publication-links">
-          <span class="link-block">
-            <a href="https://arxiv.org/pdf/2406.09398.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
-            </a>
-          </span>
-          <span class="link-block">
-            <a href="https://github.com/barcavia/RealTime-DeepfakeDetection-in-the-RealWorld" target="_blank" class="external-link button is-normal is-rounded is-dark">
-              <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
-            </a>
-          </span>
-          <span class="link-block">
-            <a href="https://arxiv.org/abs/2406.09398" target="_blank" class="external-link button is-normal is-rounded is-dark">
-              <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="hr">
-    <div class="container">
-      <hr class="is-custom-color">
-    </div>
-  </div>
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3 has-text-centered" style="font-size: 1.5rem;">Locally Aware Deepfake Detection Algorithm (<em>LaDeDa</em>)</h2>
-      <div class="video-container">
-        <video poster="" id="tree" autoplay controls muted loop height="90%">
-        <!-- Your video here -->
-          <source src="static/videos/LaDeDa_vid.mp4" type="video/mp4">
-        </video>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        By limiting its receptive field to qxq pixels, <em>LaDeDa</em> yields a deepfake score for each qxq patch. The image-level deepfake score is the global pooling of the patches scores. We use binary cross entropy loss between the image label and its deepfake score.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Recent improvements in generative AI made synthesizing fake images easy; as they can be used to cause harm, it is crucial to develop accurate techniques to identify them. This paper introduces "Locally Aware Deepfake Detection Algorithm" (<em>LaDeDa</em>), that accepts a single 9x9 image patch and outputs its deepfake score. The image deepfake score is the pooled score of its patches. With merely patch-level information, LaDeDa significantly improves over the state-of-the-art, achieving around 99\% mAP on current benchmarks. Owing to the patch-level structure of LaDeDa, we hypothesize that the generation artifacts can be detected by a simple model. We therefore distill LaDeDa into Tiny-LaDeDa, a highly efficient model consisting of only 4 convolutional layers. Remarkably, Tiny-LaDeDa has 375x fewer FLOPs and is 10,000x more parameter-efficient than LaDeDa, allowing it to run efficiently on edge devices with a minor decrease in accuracy. These almost-perfect scores raise the question: is the task of deepfake detection close to being solved?  Perhaps surprisingly, our investigation reveals that current training protocols prevent methods from generalizing to real-world deepfakes extracted from social media. To address this issue, we introduce <em>WildRF</em>, a new deepfake detection dataset curated from several popular social networks. Our method achieves the top performance of 93.7% mAP on WildRF, however the large gap from perfect accuracy shows that reliable real-world deepfake detection is still unsolved.
+  <section class="hero">
+    <div class="hero-body container is-max-desktop">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <p class="image is-square">
+            <img class="is-rounded" src="./static/images/me.png">
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Tiny-LaDeDa</h2>
-          <div class="level-set has-text-justified">
+        <div class="column">
+          <h1 class="title">
+            <b>Hey, I'm Bar Cavia</b>
+          </h1>
+          <div class="content has-text-justified">
             <p>
-              Since LaDeDa focuses on small patches, we hypothesized that a very simple model may be sufficient for detecting deepfake artifacts. We therefore designed Tiny-LaDeDa, a highly efficient model consisting of only 4 convolutional layers.
-              Remarkably, Tiny-LaDeDa achieves superior compute efficiency compared to other SoTA methods with minor accuracy trade-off.
+                Currently, I am a MSc student for Computer Science at the Hebrew University of Jerusalem, under the supervision of
+              <a href="https://cs.huji.ac.il/~yedid/"  target="_blank">Prof. Yedid Hoshen</a>.
             </p>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <img src="static/images/Tiny.png" alt="Tiny-LaDeDa" class="blend-img-background center-image" style="width: 85%; height: auto;" />
-              <p>
-              <em><strong>Tiny-LaDeDa Distillation.</strong></em> To train Tiny-LaDeDa we perform logit-based distillation using the patch-level deepfake scores predicted by LaDeDa (the teacher).
-              </p>
-            </div>
+            <div class="buttons">
+              <a class="external-link button" href="mailto:bar.cavia@mail.huji.ac.il" target="_blank">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <span>Email</span>
+              <a class="external-link button" href="https://scholar.google.com/citations?user=mIpZQhUAAAAJ&hl=en" target="_blank">
+                <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                <span>Scholar</span>
+              </a>
 
-            <div class="column">
-              <img src="static/images/FLOPs_vs_AP_updated.png" alt="" class="blend-img-background center-image" style="width: 85%; height: auto;" />
-              <em><strong>Performance vs. Efficiency trade-off.</strong></em> SoTA methods comparison of average precision (AP) performance on real-world data as a function of floating point operations per second (FLOPs) at inference time.
-            </div>
+              <a class="external-link button" href="https://x.com/ShulAsaf" target="_blank">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+                <span>Twitter</span>
+              </a>
+
+              <a class="external-link button" href="https://github.com/barcavia"  target="_blank">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Github</span>
+              </a>
+
+            <a class="external-link button" href="https://www.linkedin.com/in/bar-cavia/" target="_blank">
+              <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span>Linkedin</span>
+            </a>
+                
+            <a class="external-link button" href="static/pdfs/cv.pdf" target="_blank">
+            <span class="icon"><i class="fas fa-file"></i></span>
+            <span>Resume</span>
+          </a>
+
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section hero is-small is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Aligning Deepfake Evaluation with the Real-World</h2>
-          <div class="level-set has-text-justified">
-            <p>
-              With LaDeDa and Tiny-LaDeDa achieving near-perfect scores on current deepfake detection benchmarks, one could ask if the task is close to being solved.
-              However, we found that standard training protocols prevent SoTA methods (including ours) to detect real-world deepfakes, taken from popular social platforms. To tackle this, we introduce <em>WildRF</em>, a new deepfake detection dataset curated from popular social networks: Reddit, X (Twitter) and Facebook. We validated WildRF's effectiveness by retraining SoTA methods on this real-world data, significantly improving their performance compared to training with standard protocols.
-            </p>
-          </div>
-          <div class="column">
-            <img src="static/images/WildRF_no_background.png" alt="WildRF" class="blend-img-background center-image" style="max-width: 85%; height: auto; margin-left: 55px;" />
-            <p>
-            <em><strong>WildRF Overview.</strong></em> A realistic benchmark consisting of images sourced from popular social platforms: Reddit, X (Twitter) and Facebook. WildRF captures high variability in a range of attributes including image resolutions, formats, semantic content, generation techniques and edits encountered in-the-wild.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>Coming soon</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<div class="hr">
   <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <hr>
+  </div>
+</div>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Publications</h2>
+
+    <!-- Start LaDeDa -->
+    <div class="publication-block columns is-vcentered">
+      <div class="column is-3">
+        <p class="image ">
+          <video poster="" id="LaDeDa" autoplay controls muted loop height="100%">
+            <source src="static/videos/LaDeDa_vid.mp4" type="video/mp4">
+            </video>
           </p>
-
+        </div>
+        <div class="column is-9">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://vision.huji.ac.il/ladeda" target="_blank">Real-Time Deepfake Detection in the Real-World</a></h3>
+            <div class="publication-venue">Arxiv Preprint</div>
+            <div class="publication-authors">
+              <span class="author-block">
+                 <strong>Bar Cavia</strong>,
+              </span>
+              <span class="author-block">
+                 Eliahu Horwitz
+              </span>
+              <span class="author-block">
+                 Tal Reiss
+              </span>
+              <span class="author-block">
+                Yedid Hoshen
+              </span>
+            </div>
+            <p class="publication-description">Recent improvements in generative AI made synthesizing fake images easy; as they can be used to cause harm, it is crucial to develop accurate techniques to identify them. This paper introduces "Locally Aware Deepfake Detection Algorithm" (*LaDeDa*), that accepts a single 9x9 image patch and outputs its deepfake score. The image deepfake score is the pooled score of its patches. With merely patch-level information, LaDeDa significantly improves over the state-of-the-art, achieving around 99% mAP on current benchmarks. Owing to the patch-level structure of LaDeDa, we hypothesize that the generation artifacts can be detected by a simple model. We therefore distill LaDeDa into Tiny-LaDeDa, a highly efficient model consisting of only 4 convolutional layers. Remarkably, Tiny-LaDeDa has 375x fewer FLOPs and is 10,000x more parameter-efficient than LaDeDa, allowing it to run efficiently on edge devices with a minor decrease in accuracy. These almost-perfect scores raise the question: is the task of deepfake detection close to being solved? Perhaps surprisingly, our investigation reveals that current training protocols prevent methods from generalizing to real-world deepfakes extracted from social media. To address this issue, we introduce *WildRF*, a new deepfake detection dataset curated from several popular social networks. Our method achieves the top performance of 93.7% mAP on WildRF, however the large gap from perfect accuracy shows that reliable real-world deepfake detection is still unsolved.</p>
+            <!-- Publication Links. -->
+            <div class="publication-links buttons">
+              <a class="external-link button is-small is-rounded"
+              href="https://vision.huji.ac.il/ladeda/" target="_blank">
+              <span class="icon"><i class="fas fa-globe-europe"></i></span>
+              <span>Project Page</span>
+            </a>
+            <a class="external-link button is-small is-rounded" href="https://arxiv.org/abs/2406.09398" target="_blank">
+              <span class=" icon"><i class="fas fa-file-pdf"></i></span>
+              <span>arXiv</span>
+            </a>
+            <a class="external-link button is-small is-rounded" href="https://github.com/barcavia/RealTime-DeepfakeDetection-in-the-RealWorld" target="_blank">
+              <span class="icon"><i class="fas fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+    <!-- End LaDeDa -->
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
 
+    <!-- Start Factor -->
+    <div class="publication-block columns is-vcentered">
+      <div class="column is-3">
+        <p class="image ">
+          <p class="image">
+            <img id="mother" src="static/images/factor.png" alt="Factor Image" height="100%">
+          </p>
+        </div>
+        <div class="column is-9">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://arxiv.org/pdf/2311.01458" target="_blank">Detecting Deepfakes Without Seeing Any</a></h3>
+            <div class="publication-venue">Arxiv Preprint</div>
+            <div class="publication-authors">
+              <span class="author-block">
+                 Tal Reiss,
+              </span>
+              <span class="author-block">
+                 <strong>Bar Cavia</strong>,
+              </span>
+              <span class="author-block">
+                Yedid Hoshen
+              </span>
+            </div>
+            <p class="publication-description">Deepfake attacks, malicious manipulation of media containing people, are a serious concern for society. Conventional deepfake detection methods train supervised classifiers to distinguish real media from previously encountered deepfakes. Such techniques can only detect deepfakes similar to those previously seen, but not zero-day (previously unseen) attack types. As current deepfake generation techniques are changing at a breathtaking pace, new attack types are proposed frequently, making this a major issue. Our main observations are that: i) in many effective deepfake attacks, the fake media must be accompanied by false facts i.e. claims about the identity, speech, motion, or appearance of the person. For instance, when impersonating Obama, the attacker explicitly or implicitly claims that the fake media show Obama; ii) current generative techniques cannot perfectly synthesize the false facts claimed by the attacker. We therefore introduce the concept of “fact checking”, adapted from fake news detection, for detecting zero-day deepfake attacks. Fact checking verifies that the claimed facts (e.g. identity is Obama), agree with the observed media (e.g. is the face really Obama’s?), and thus can differentiate between real and fake media. Consequently, we introduce FACTOR, a practical recipe for deepfake fact checking and demonstrate its power in critical attack settings: face swapping and audio-visual synthesis. Although it is training-free, relies exclusively on off-the-shelf features, is very easy to implement, and does not see any deepfakes, it achieves better than state-of-the-art accuracy. </p>
+            <!-- Publication Links. -->
+            <div class="publication-links buttons">
+            <a class="external-link button is-small is-rounded" href="https://arxiv.org/pdf/2311.01458" target="_blank">
+              <span class=" icon"><i class="fas fa-file-pdf"></i></span>
+              <span>arXiv</span>
+            </a>
+            <a class="external-link button is-small is-rounded" href="https://github.com/talreiss/FACTOR" target="_blank">
+              <span class="icon"><i class="fas fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Factor -->
+
+        </div>
+      </section>
+
+
+<!--todo-->
+<!--&lt;!&ndash; Default Statcounter code for HUJI Personal Website-->
+<!--  https://pages.cs.huji.ac.il/asaf-shul/ &ndash;&gt;-->
+<!--  <script type="text/javascript">-->
+<!--    var sc_project=12731509; -->
+<!--    var sc_invisible=1; -->
+<!--    var sc_security="9f01193e"; -->
+<!--  </script>-->
+<!--  <script type="text/javascript"-->
+<!--  src="https://www.statcounter.com/counter/counter.js"-->
+<!--  async></script>-->
+<!--  <noscript><div class="statcounter"><a title="web stats"-->
+<!--    href="https://statcounter.com/" target="_blank"><img-->
+<!--    class="statcounter"-->
+<!--    src="https://c.statcounter.com/12731509/0/9f01193e/1/"-->
+<!--    alt="web stats"-->
+<!--    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>-->
+<!--    &lt;!&ndash; End of Statcounter Code &ndash;&gt;-->
   </body>
+
   </html>
